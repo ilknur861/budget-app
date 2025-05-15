@@ -9,6 +9,8 @@ const Navbar = () => {
         <Link to="/" style={styles.link} onMouseEnter={(e) => handleMouseEnter(e)} onMouseLeave={(e) => handleMouseLeave(e)}>Home</Link>
         <Link to="/add" style={styles.link} onMouseEnter={(e) => handleMouseEnter(e)} onMouseLeave={(e) => handleMouseLeave(e)}>Add Transaction</Link>
         <Link to="/list" style={styles.link} onMouseEnter={(e) => handleMouseEnter(e)} onMouseLeave={(e) => handleMouseLeave(e)}>Transaction List</Link>
+        <Link to="/overview" style={styles.link} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>Spending Overview</Link>
+
       </div>
     </nav>
   );
