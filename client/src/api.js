@@ -1,4 +1,12 @@
 // api.js (Frontend)
+const API_BASE = process.env.REACT_APP_API_URL;
+
+export const getTransactions = async () => {
+  const res = await fetch(`${API_BASE}/api/transactions`);
+  if (!res.ok) throw new Error("Failed to fetch transactions");
+  return await res.json();
+};
+
 
 export const fetchTransactions = async () => {
   try {
