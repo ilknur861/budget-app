@@ -7,6 +7,8 @@ import TransactionList from './components/TransactionList';
 import SpendingOverview from './components/SpendingOverview';
 import SpendingChart from './components/SpendingChart';
 import EditTransaction from './components/EditTransaction';
+import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 function App() {
     return (
@@ -20,6 +22,8 @@ function App() {
                 <Route path="/edit/:id" element={<EditTransaction />} />
                 <Route path="/overview" element={<SpendingOverview />} />
                 <Route path="/chart" element={<SpendingChart />} />
+                <Route path="/signup" element={<Signup />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
         </Router>
     );
